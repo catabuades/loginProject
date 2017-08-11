@@ -1,11 +1,12 @@
 extends ../layout
+
 block content
   nav.navbar.navbar-default
     .container-fluid
       .navbar-header
-        a.navbar-brand(href='#') Brand
-        button.btn.btn-default.navbar-btn(type='button') Sign out
+        //- a.navbar-brand(href='') Brand
+        a(href='/logout')
+          button.btn.btn-default.navbar-btn(type='button') Sign out
   .wrap
     .jumbotron
       h1 Welcome
-      p This is the welcome page

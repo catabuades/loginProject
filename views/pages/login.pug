@@ -1,4 +1,5 @@
 extends ../layout
+
 block content
   //- nav.navbar.navbar-default
   //-   .container-fluid
@@ -10,7 +11,7 @@ block content
       .modal-dialog
         .modal-content
           .modal-header
-            h1.text-center Sign in
+            h1.text-center Login
           .modal-body
             form(accept-charset='UTF-8', role='form', action='/login', method='POST')
               .form-group
@@ -19,3 +20,5 @@ block content
                 input.form-control.input-lg(name='password' type='password', placeholder='Password')
               .form-group
                 input.signButton.btn.btn-block.btn-lg.btn-primary(type='submit', value='Login')
+                span.pull-right
+                  a(href='register') Register
