@@ -3,7 +3,7 @@ const fs = require('fs')
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
-const session = require('cookie-session')
+const cookieSession = require('cookie-session')
 // arranca express
 const app = express()
 // puerto que va a escuchar
@@ -21,9 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // middleware
-app.use(session({
-  secret: 'holaQueAse',
-  name: 'ThisIsTheProjectCookie'
+app.use(cookieSession({
+  name: 'ThisIsTheProjectCookie',
+  keys: ['jksjlfskjfeoiwjl']
 }))
 // arranca la pagina del formulario
 app.get('/login', (req, res) => {
