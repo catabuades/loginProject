@@ -21,7 +21,7 @@ function handlePostLogin (req, res) {
     if (authentification) {
       console.log('hola estoy en autentification')
       req.session.logged = true
-      res.redirect('/home')
+      res.redirect('/to-do')
     } else {
       res.redirect('/error')
     }

@@ -1,5 +1,5 @@
 function showLogout (req, res) {
-  req.session.logged = false
+  req.session.logged = null
   res.redirect('/login')
 }
 

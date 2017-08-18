@@ -1,5 +1,5 @@
 function showRegister (req, res) {
-  res.render('pages/register')
+  res.render('pages/auth/register')
 }
 
 module.exports = showRegister

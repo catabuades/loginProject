@@ -1,5 +1,134 @@
 /* login page */
 
 .container.login-module {
-	margin-top: 100px;
+  margin-top: 100px;
 }
+
+/* to-do */
+body {
+}
+
+.background {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background-repeat: none;
+  min-height: 200%;
+}
+
+.container {
+  padding-bottom: 50px;
+}
+
+form {
+    display: inline-block;
+}
+
+.modal-body {
+  height: auto;
+}
+
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+a.close {
+  float: right;
+}
+
+.add-btn.btn.input-lg {
+  border: 1px solid #dddddd;
+  background-color: transparent;
+}
+
+.task-item span {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.task-item:hover {
+  background: rgb(220,210,220);
+}
+
+.list-box {
+  margin-bottom: 10px;
+}
+
+.content-box {
+  display: block;
+}
+
+p {
+  display: inline-block;
+  padding-left: 32px;
+}
+
+.border {
+  margin-top: 50px;
+  border-top: 2px solid black;
+}
+
+h1.completed {
+  text-align: center;
+}
+
+input.form-control.input-lg:focus {
+  outline-color: gray;
+}
+
+input:focus {
+  outline-color: gray;
+}
+
+/*button remove*/
+
+.remove {
+  border: none;
+  border-radius: 3px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  color: #e9defa;
+}
+
+.remove:hover {
+  color: #eee;
+}
+
+/*edit task*/
+.title-box {
+  display: inline-block;
+}
+
+.title-box input {
+  display: none;
+}
+
+.title-box.edit input {
+  display: block;
+  margin: 0 20px;
+}
+
+.title-box.edit span {
+  display: none;
+}
+
+/* columns grid */
+/*
+div.container.wrap {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+div.contentInfo {
+  margin-left: 70px;
+}
+
+div.col-xs-12.col-sm-10.col-sm-offset-2.col-md-8.col-md-offset-2 {
+  margin: 0 auto;
+  padding: 0;
+}*/
+
+/*div.col-xs-12.col-sm-10.col-sm-offset-2.col-md-8.col-md-offset-2.taskListBoxes {
+  margin-left: 0;
+  margin-right: 0;
+}*/

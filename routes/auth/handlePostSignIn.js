@@ -6,7 +6,7 @@ function handlePostSignIn (req, res) {
 
   fs.appendFile('data-store/users_txt.txt', '\r\n' + email + ':' + password, 'utf-8', (err) => {
     if (err) throw err
-    res.redirect('/home')
+    res.redirect('/to-do')
   })
 }
 
